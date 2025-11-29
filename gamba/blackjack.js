@@ -6,7 +6,7 @@ const rl = readline.createInterface({ input, output });
 
 const singleDeck = [
     "♦2", "♦3", "♦4", "♦5", "♦6", "♦7", "♦8", "♦9", "♦10", "♦J", "♦Q", "♦K", "♦A",
-    "♠ ️2", "♠3", "♠4", "♠5", "♠6", "♠7", "♠8", "♠9", "♠10", "♠J", "♠Q", "♠K", "♠A",
+    "♠2", "♠3", "♠4", "♠5", "♠6", "♠7", "♠8", "♠9", "♠10", "♠J", "♠Q", "♠K", "♠A",
     "♥2", "♥3", "♥4", "♥5", "♥6", "♥7", "♥8", "♥9", "♥10", "♥J", "♥Q", "♥K", "♥A",
     "♣2", "♣3", "♣4", "♣5", "♣6", "♣7", "♣8", "♣9", "♣10", "♣J", "♣Q", "♣K", "♣A",
 ]
@@ -19,7 +19,8 @@ function startGame() {
     for (let i = 0; i < decksInShoe; i++) {
         shoe.push(...singleDeck);
     }
-    console.log(`Welcome to BlackJack♦️ ♠️ ♥️ ♣️\nYou start with $${money}`);
+    console.log(`Welcome to BlackJack ♦️ ♠️ ♥️ ♣️\nYou start with $${money}`);
+    console.log( "\u001b[1;31m Red message\x1b[0m");
     startRound();
 }
 
