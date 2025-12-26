@@ -1,5 +1,4 @@
 // Custom styling for console.log because installing a package sounds like a lotta work ._. 🐧
-// !Works only with node (i think... maybe...)
 const colourReference = {
     reset: "\x1b[0m",
     bright: "\x1b[1m",
@@ -40,5 +39,4 @@ function styledLogs(colour, text, decorations) {
     return console.log(styling, text, colourReference.reset)
 }
 
-styledLogs('red', 'yep');
-styledLogs('bgCyan', 'yo');
+module.exports.styledLogs = styledLogs;
